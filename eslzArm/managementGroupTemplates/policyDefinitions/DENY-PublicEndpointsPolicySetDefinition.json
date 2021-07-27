@@ -103,7 +103,7 @@
                         ],
                         "defaultValue": "Deny"
                     },
-                    "PostgreSQLFlexPublicIpDenyEffect": {
+                    /* USGOV_PolicyDefinitionNotFound "PostgreSQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for PostgreSql Flexible Server",
@@ -115,8 +115,8 @@
                             "Disabled"
                         ],
                         "defaultValue": "Deny"
-                    },
-                    "MySQLFlexPublicIpDenyEffect": {
+                    },*/
+                    /* USGOV_PolicyDefinitionNotFound "MySQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for MySQL Flexible Server",
@@ -128,7 +128,7 @@
                             "Disabled"
                         ],
                         "defaultValue": "Deny"
-                    },
+                    },*/
                     "BatchPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
@@ -208,7 +208,7 @@
                             }
                         }
                     },
-                    {
+                    /* USGOV_PolicyDefinitionNotFound {
                         "policyDefinitionReferenceId": "PostgreSQLFlexDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5e1de0e3-42cb-4ebc-a86d-61d0c619ca48",
                         "parameters": {
@@ -216,8 +216,8 @@
                                 "value": "[[parameters('PostgreSQLFlexPublicIpDenyEffect')]"
                             }
                         }
-                    },
-                    {
+                    },*/
+                    /* USGOV_PolicyDefinitionNotFound {
                         "policyDefinitionReferenceId": "MySQLFlexDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c9299215-ae47-4f50-9c54-8a392f68a052",
                         "parameters": {
@@ -225,7 +225,7 @@
                                 "value": "[[parameters('MySQLFlexPublicIpDenyEffect')]"
                             }
                         }
-                    },
+                    },*/
                     {
                         "policyDefinitionReferenceId": "BatchDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/74c5a0ae-5e48-4738-b093-65e23a060488",
