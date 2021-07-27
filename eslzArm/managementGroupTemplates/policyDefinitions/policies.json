@@ -16541,7 +16541,7 @@
               },
               {
                 /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",*/
-                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119')]",
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/HealthcareAPIs_EnableByok_Audit')]",
                 "policyDefinitionReferenceId": "HealthcareAPIsCMKEffect",
                 "parameters": {
                   "effect": {
