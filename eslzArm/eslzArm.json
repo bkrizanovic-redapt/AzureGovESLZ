@@ -652,7 +652,7 @@
             "monitoringSolutionsDeploymentName": "[take(concat('EntScale-Solutions', variables('deploymentSuffix')), 64)]",
             "asbPolicyDeploymentName": "[take(concat('EntScale-ASB', variables('deploymentSuffix')), 64)]",
             "resourceDiagnosticsPolicyDeploymentName": "[take(concat('EntScale-ResourceDiagnostics', variables('deploymentSuffix')), 64)]",
-            "activityDiagnosticsPolicyDeploymentName": "[take(concat('EntScale-ActivityDiagnostics', variables('deploymentSuffix')), 64)]",
+            /* USGOV_PolicyDefinitionNotFound "activityDiagnosticsPolicyDeploymentName": "[take(concat('EntScale-ActivityDiagnostics', variables('deploymentSuffix')), 64)]",*/
             "ascPolicyDeploymentName": "[take(concat('EntScale-ASC', variables('deploymentSuffix')), 64)]",
             "vnetConnectivityHubDeploymentName": "[take(concat('EntScale-HubSpoke', variables('deploymentSuffix')), 64)]",
             "vwanConnectivityHubDeploymentName": "[take(concat('EntScale-VWanHub', variables('deploymentSuffix')), 64)]",
@@ -1304,7 +1304,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').connectivitySubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
@@ -1335,7 +1335,7 @@
             "resourceGroup": "[variables('platformRgNames').ddosRg]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ddosRgDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
             ],
             "properties": {
@@ -1393,7 +1393,7 @@
             "name": "[variables('deploymentNames').vnetConnectivityHubDeploymentName]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').connectivitySubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
@@ -1479,7 +1479,7 @@
             "name": "[variables('deploymentNames').nvaConnectivityHubDeploymentName]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').connectivitySubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
@@ -1553,7 +1553,7 @@
             "name": "[variables('deploymentNames').vwanConnectivityHubDeploymentName]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').connectivitySubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
@@ -1610,7 +1610,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').connectivitySubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
@@ -1644,7 +1644,7 @@
             "resourceGroup": "[variables('platformRgNames').privateDnsRg]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').privateDnsZoneRgDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vnetConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vwanConnectivityHubDeploymentName)]",
@@ -1749,7 +1749,7 @@
                 "[resourceId('Microsoft.Resources/deployments', variables('esLitedeploymentNames').monitoringSolutionsLiteDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').monitoringSolutionsDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').identitySubscriptionPlacement)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vnetConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vwanConnectivityHubDeploymentName)]",
@@ -2412,7 +2412,7 @@
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vwanConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').nvaConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').identitySubscriptionPlacement)]"
@@ -2458,7 +2458,7 @@
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').vwanConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').nvaConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').identitySubscriptionPlacement)]"
@@ -2504,7 +2504,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
             ],
@@ -2538,7 +2538,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
             ],
@@ -2572,7 +2572,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
             ],
@@ -2610,7 +2610,7 @@
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').nvaConnectivityHubDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ddosLzPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').policyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('esLiteDeploymentNames').vwanConnectivityHubLiteDeploymentName)]",
@@ -2923,7 +2923,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('esLiteDeploymentNames').platformLiteSubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]"
             ],
@@ -2986,7 +2986,7 @@
             "location": "[deployment().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('esLiteDeploymentNames').platformLiteSubscriptionPlacement)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
@@ -3023,7 +3023,7 @@
             "resourceGroup": "[variables('platformRgNames').privateDnsRg]",
             "dependsOn": [
                 "[resourceId('Microsoft.Resources/deployments', variables('esLitedeploymentNames').privateDnsZoneRgLiteDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('esLitedeploymentNames').vnetConnectivityHubLiteDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('esLitedeploymentNames').vwanConnectivityHubLiteDeploymentName)]",
@@ -3259,7 +3259,7 @@
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').asbPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').ascPolicyDeploymentName)]",
                 "[resourceId('Microsoft.Resources/deployments', variables('esLiteDeploymentNames').ddosHubLitePolicyDeploymentName)]",
-                "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",
+                /* USGOV_PolicyDefinitionNotFound "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').activityDiagnosticsPolicyDeploymentName)]",*/
                 "[resourceId('Microsoft.Resources/deployments', variables('deploymentNames').resourceDiagnosticsPolicyDeploymentName)]"
             ],
             "location": "[deployment().location]",
