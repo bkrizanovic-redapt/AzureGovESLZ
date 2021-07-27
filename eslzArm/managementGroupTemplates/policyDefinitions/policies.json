@@ -16511,8 +16511,7 @@
                 }
               },
               {
-                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",*/
-                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/MySQL_EnableByok_Audit')]",
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
