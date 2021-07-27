@@ -16511,7 +16511,8 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",
+                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",*/
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833')]",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16520,7 +16521,8 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",
+                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",*/
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274')]",
                 "policyDefinitionReferenceId": "PostgreSQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16538,7 +16540,8 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",
+                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",*/
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119')]",
                 "policyDefinitionReferenceId": "HealthcareAPIsCMKEffect",
                 "parameters": {
                   "effect": {
