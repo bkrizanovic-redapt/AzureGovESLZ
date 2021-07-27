@@ -16511,7 +16511,8 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",
+                /* USGOV_MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",*/
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cee9dcb7-13b9-4fc3-9dea-2f905bc75d2a",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16520,8 +16521,8 @@
                 }
               },
               {
-                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",*/
-                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/PostgreSQL_EnableByok_Audit')]",
+                /* USGOV_MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",*/
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cee9dcb7-13b9-4fc3-9dea-2f905bc75d35",
                 "policyDefinitionReferenceId": "PostgreSQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16539,8 +16540,8 @@
                 }
               },
               {
-                /* USGOV MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",*/
-                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/HealthcareAPIs_EnableByok_Audit')]",
+                /* USGOV_MODIFICATION:"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",*/
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3a333010-5649-4b25-9a57-e19145f70cf4",
                 "policyDefinitionReferenceId": "HealthcareAPIsCMKEffect",
                 "parameters": {
                   "effect": {
