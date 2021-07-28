@@ -16511,7 +16511,7 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/99a8f933-2a10-4ffe-81f3-79cdff64ca4f",
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/99a8f933-2a10-4ffe-81f3-79cdff64ca4f')]",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16520,7 +16520,7 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be87",
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be87')]",
                 "policyDefinitionReferenceId": "PostgreSQLCMKEffect",
                 "parameters": {
                   "effect": {
@@ -16538,7 +16538,7 @@
                 }
               },
               {
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be91",
+                "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be91')]",
                 "policyDefinitionReferenceId": "HealthcareAPIsCMKEffect",
                 "parameters": {
                   "effect": {
