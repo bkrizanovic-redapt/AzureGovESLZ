@@ -1,15 +1,7 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "topLevelManagementGroupPrefix": {
-            "type": "string",
-            "maxLength": 10,
-            "metadata": {
-              "description": "Provide a prefix (max 10 characters, unique at tenant-scope) for the Management Group hierarchy and other resources created as part of Enterprise-scale."
-            }
-          }
-    },
+    "parameters": {},
     "resources": [
         {
             "type": "Microsoft.Authorization/policySetDefinitions",
@@ -31,14 +23,14 @@
                             "description": "Private DNS Zone Identifier"
                         }
                     },
-                    "azureWebPrivateDnsZoneId": {
+                    /* USGOV_InvalidPolicySetParameterUpdate "azureWebPrivateDnsZoneId": {
                         "type": "string",
                         "metadata": {
                             "displayName": "azureWebPrivateDnsZoneId",
                             "strongType": "Microsoft.Network/privateDnsZones",
                             "description": "Private DNS Zone Identifier"
                         }
-                    },
+                    },*/
                     "azureBatchPrivateDnsZoneId": {
                         "type": "string",
                         "metadata": {
@@ -221,8 +213,8 @@
                             }
                         }
                     },
-                   {
-                        "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/80f722c4-c2aa-41f5-a4ca-f6f6ffa62b34')]",
+                    /* USGOV_InvalidPolicySetParameterUpdate {
+                        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0b026355-49cb-467b-8ac4-f777874e175a",
                         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Web",
                         "parameters": {
                             "privateDnsZoneId": {
@@ -232,7 +224,7 @@
                                 "value": "[[parameters('effect')]"
                             }
                         }
-                    },
+                    },*/
                     {
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4ec38ebc-381f-45ee-81a4-acbc4be878f8",
                         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Batch",
