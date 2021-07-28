@@ -896,7 +896,11 @@
                     "contentVersion": "1.0.0.0",
                     "uri": "[variables('deploymentUris').privateDnsZonePolicySetDefinition]"
                 },
-                "parameters": {}
+                "parameters": {
+                    "topLevelManagementGroupPrefix": {
+                        "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+                    }
+                }
             }
         },        
         {
