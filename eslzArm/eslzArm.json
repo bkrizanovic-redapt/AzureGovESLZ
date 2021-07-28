@@ -872,7 +872,11 @@
                     "contentVersion": "1.0.0.0",
                     "uri": "[variables('deploymentUris').publicEndpointPolicySetDefinition]"
                 },
-                "parameters": {}
+                "parameters": {
+                    "topLevelManagementGroupPrefix": {
+                        "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+                    }
+                }
             }
         },
         {
