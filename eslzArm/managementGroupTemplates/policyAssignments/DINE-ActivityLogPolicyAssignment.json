@@ -24,8 +24,9 @@
         }
     },
     "variables": {
+        "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]",
         "policyDefinitions": {
-            "deployAzureActivityLog": "[concat(concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix')), '/providers/Microsoft.Authorization/policyDefinitions/b56ad976-7870-4e0f-9f0b-a1e811512c86'))]"
+            "deployAzureActivityLog": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/b56ad976-7870-4e0f-9f0b-a1e811512c86')]"
         },
         "policyAssignmentNames": {
             "azureActivityLog": "Deploy-AzActivity-Log",
