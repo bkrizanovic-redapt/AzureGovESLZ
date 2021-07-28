@@ -25,7 +25,7 @@
     },
     "variables": {
         "policyDefinitions": {
-            "deployAzureActivityLog": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'), '/providers/Microsoft.Authorization/policyDefinitions/b56ad976-7870-4e0f-9f0b-a1e811512c86')]"
+            "deployAzureActivityLog": "[concat(concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix')), '/providers/Microsoft.Authorization/policyDefinitions/b56ad976-7870-4e0f-9f0b-a1e811512c86'))]"
         },
         "policyAssignmentNames": {
             "azureActivityLog": "Deploy-AzActivity-Log",
