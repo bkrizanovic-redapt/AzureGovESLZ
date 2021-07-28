@@ -1,18 +1,8 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "topLevelManagementGroupPrefix": {
-            "type": "string",
-            "maxLength": 10,
-            "metadata": {
-              "description": "Provide a prefix (max 10 characters, unique at tenant-scope) for the Management Group hierarchy and other resources created as part of Enterprise-scale."
-            }
-          }
-    },
-    "variables": {
-        "scope": "[concat('/providers/Microsoft.Management/managementGroups/', parameters('topLevelManagementGroupPrefix'))]"
-    },
+    "parameters": {},
+    "variables": {},
     "resources": [
         {
             "type": "Microsoft.Authorization/policySetDefinitions",
@@ -113,7 +103,7 @@
                         ],
                         "defaultValue": "Deny"
                     },
-                    "PostgreSQLFlexPublicIpDenyEffect": {
+                    /* USGOV_PolicyDefinitionNotFound "PostgreSQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for PostgreSql Flexible Server",
@@ -125,8 +115,8 @@
                             "Disabled"
                         ],
                         "defaultValue": "Deny"
-                    },
-                    /* USGOV_ISSUE "MySQLFlexPublicIpDenyEffect": {
+                    },*/
+                    /* USGOV_PolicyDefinitionNotFound "MySQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for MySQL Flexible Server",
@@ -218,18 +208,18 @@
                             }
                         }
                     },
-                    {
+                    /* USGOV_PolicyDefinitionNotFound {
                         "policyDefinitionReferenceId": "PostgreSQLFlexDenyPublicIP",
-                        "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/e1a96885-405b-471c-801a-41d1d7e3a6e7')]",
+                        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5e1de0e3-42cb-4ebc-a86d-61d0c619ca48",
                         "parameters": {
                             "effect": {
                                 "value": "[[parameters('PostgreSQLFlexPublicIpDenyEffect')]"
                             }
                         }
-                    },
-                    /* USGOV_ISSUE {
+                    },*/
+                    /* USGOV_PolicyDefinitionNotFound {
                         "policyDefinitionReferenceId": "MySQLFlexDenyPublicIP",
-                        "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/c9299215-ae47-4f50-9c54-8a392f68a052')]",
+                        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c9299215-ae47-4f50-9c54-8a392f68a052",
                         "parameters": {
                             "effect": {
                                 "value": "[[parameters('MySQLFlexPublicIpDenyEffect')]"
