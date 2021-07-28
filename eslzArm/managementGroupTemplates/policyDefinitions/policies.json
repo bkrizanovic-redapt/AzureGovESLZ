@@ -16512,7 +16512,7 @@
               },
               {
                 /* USGOV_PolicyDefinitionNotFound "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",*/
-                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/https://raw.githubusercontent.com/Azure/azure-policy/master/built-in-policies/policyDefinitions/SQL/MySQL_EnableByok_Audit.json",
+                "policyDefinitionId": "https://raw.githubusercontent.com/Azure/azure-policy/master/built-in-policies/policyDefinitions/SQL/MySQL_EnableByok_Audit.json",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
