@@ -25,7 +25,7 @@
     },
     "variables": {
         "policyDefinitions": {
-            "deployAzureActivityLog": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f"
+            "deployAzureActivityLog": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/b56ad976-7870-4e0f-9f0b-a1e811512c86')]"
         },
         "policyAssignmentNames": {
             "azureActivityLog": "Deploy-AzActivity-Log",
