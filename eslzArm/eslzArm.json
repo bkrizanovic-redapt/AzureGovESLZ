@@ -876,6 +876,7 @@
                     "topLevelManagementGroupPrefix": {
                         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
                     }
+                }
             }
         },
         {
