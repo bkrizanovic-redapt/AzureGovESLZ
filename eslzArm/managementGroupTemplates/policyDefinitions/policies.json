@@ -16349,7 +16349,7 @@
                   "description": "Secure your storage account with greater flexibility using customer-managed keys (CMKs). When you specify a CMK, that key is used to protect and control access to the key that encrypts your data. Using CMKs provides additional capabilities to control rotation of the key encryption key or cryptographically erase data."
                 }
               },
-              "MySQLCMKEffect": {
+              /* USGOV_PolicyDefinitionNotFound "MySQLCMKEffect": {
                 "type": "String",
                 "defaultValue": "AuditIfNotExists",
                 "allowedValues": [
@@ -16360,7 +16360,7 @@
                   "displayName": "Azure MySQL servers bring your own key data protection should be enabled",
                   "description": "Use customer-managed keys to manage the encryption at rest of your MySQL servers. By default, the data is encrypted at rest with service-managed keys, but customer-managed keys (CMK) are commonly required to meet regulatory compliance standards. CMKs enable the data to be encrypted with an Azure Key Vault key created and owned by you. You have full control and responsibility for the key lifecycle, including rotation and management."
                 }
-              },
+              },*/
               /* USGOV_PolicyDefinitionNotFound "PostgreSQLCMKEffect": {
                 "type": "String",
                 "defaultValue": "AuditIfNotExists",
@@ -16510,16 +16510,15 @@
                   }
                 }
               },
-              {
-                /* USGOV_PolicyDefinitionNotFound "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",*/
-                "policyDefinitionId": "https://raw.githubusercontent.com/Azure/azure-policy/master/built-in-policies/policyDefinitions/SQL/MySQL_EnableByok_Audit.json",
+              /* USGOV_PolicyDefinitionNotFound {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
                 "parameters": {
                   "effect": {
                     "value": "[[parameters('MySQLCMKEffect')]"
                   }
                 }
-              },
+              },*/
               /* USGOV_PolicyDefinitionNotFound {
                 "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",
                 "policyDefinitionReferenceId": "PostgreSQLCMKEffect",
