@@ -33,7 +33,7 @@
         "baseId": "[concat(parameters('dnsZoneResourceGroupId'), '/providers/Microsoft.Network/privateDnsZones/')]",
         "policyParameterMapping": {
             "azureFilePrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.afs.azure.net')]",
-            /* USGOV_InvalidPolicySetParameterUpdate "azureWebPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.webpubsub.azure.com')]",*/
+            "azureWebPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.webpubsub.azure.com')]",
             "azureBatchPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.', parameters('location'), '.batch.azure.com')]",
             "azureAppPrivateDnsZoneId": "[concat(variables('baseId'), 'privatelink.azconfig.io')]",
             "azureAsrPrivateDnsZoneId": "[concat(variables('baseId'), parameters('location'), '.privatelink.siterecovery.windowsazure.com')]",
@@ -84,9 +84,9 @@
                     "azureFilePrivateDnsZoneId": {
                         "value": "[variables('policyParameterMapping').azureFilePrivateDnsZoneId]"
                     },
-                    /* USGOV_InvalidPolicySetParameterUpdate "azureWebPrivateDnsZoneId": {
+                    "azureWebPrivateDnsZoneId": {
                         "value": "[variables('policyParameterMapping').azureWebPrivateDnsZoneId]"
-                    },*/
+                    },
                     "azureBatchPrivateDnsZoneId": {
                         "value": "[variables('policyParameterMapping').azureBatchPrivateDnsZoneId]"
                     },
