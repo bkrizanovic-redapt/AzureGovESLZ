@@ -16349,6 +16349,7 @@
                   "description": "Secure your storage account with greater flexibility using customer-managed keys (CMKs). When you specify a CMK, that key is used to protect and control access to the key that encrypts your data. Using CMKs provides additional capabilities to control rotation of the key encryption key or cryptographically erase data."
                 }
               },
+              // US_Gov_Error_001
               "MySQLCMKEffect": {
                 "type": "String",
                 "defaultValue": "AuditIfNotExists",
@@ -16361,6 +16362,7 @@
                   "description": "Use customer-managed keys to manage the encryption at rest of your MySQL servers. By default, the data is encrypted at rest with service-managed keys, but customer-managed keys (CMK) are commonly required to meet regulatory compliance standards. CMKs enable the data to be encrypted with an Azure Key Vault key created and owned by you. You have full control and responsibility for the key lifecycle, including rotation and management."
                 }
               },
+              // US_Gov_Error_002
               "PostgreSQLCMKEffect": {
                 "type": "String",
                 "defaultValue": "AuditIfNotExists",
@@ -16385,6 +16387,7 @@
                   "description": "Implementing Transparent Data Encryption (TDE) with your own key provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties. This recommendation applies to organizations with a related compliance requirement."
                 }
               },
+              // US_Gov_Error_003
               "HealthcareAPIsCMKEffect": {
                 "type": "String",
                 "defaultValue": "audit",
@@ -16510,6 +16513,7 @@
                   }
                 }
               },
+              // US_Gov_Error_001
               {
                 "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/99a8f933-2a10-4ffe-81f3-79cdff64ca4f')]",
                 "policyDefinitionReferenceId": "MySQLCMKEffect",
@@ -16519,6 +16523,7 @@
                   }
                 }
               },
+              // US_Gov_Error_002
               {
                 "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be87')]",
                 "policyDefinitionReferenceId": "PostgreSQLCMKEffect",
@@ -16537,6 +16542,7 @@
                   }
                 }
               },
+              // US_Gov_Error_003
               {
                 "policyDefinitionId": "[concat(variables('scope'), '/providers/Microsoft.Authorization/policyDefinitions/6173d2ef-738c-4224-b31c-72e6c135be91')]",
                 "policyDefinitionReferenceId": "HealthcareAPIsCMKEffect",

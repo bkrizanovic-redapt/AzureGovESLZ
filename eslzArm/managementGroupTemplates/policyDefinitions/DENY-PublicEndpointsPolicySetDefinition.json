@@ -103,7 +103,8 @@
                         ],
                         "defaultValue": "Deny"
                     },
-                    /* USGOV_PolicyDefinitionNotFound "PostgreSQLFlexPublicIpDenyEffect": {
+                    // US_Gov_Error_005
+                    "PostgreSQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for PostgreSql Flexible Server",
@@ -115,8 +116,9 @@
                             "Disabled"
                         ],
                         "defaultValue": "Deny"
-                    },*/
-                    /* USGOV_PolicyDefinitionNotFound "MySQLFlexPublicIpDenyEffect": {
+                    },
+                    // US_Gov_Error_006
+                    "MySQLFlexPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
                             "displayName": "Public network access should be disabled for MySQL Flexible Server",
@@ -128,7 +130,7 @@
                             "Disabled"
                         ],
                         "defaultValue": "Deny"
-                    },*/
+                    },
                     "BatchPublicIpDenyEffect": {
                         "type": "String",
                         "metadata": {
@@ -208,7 +210,8 @@
                             }
                         }
                     },
-                    /* USGOV_PolicyDefinitionNotFound {
+                    // US_Gov_Error_005
+                    {
                         "policyDefinitionReferenceId": "PostgreSQLFlexDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5e1de0e3-42cb-4ebc-a86d-61d0c619ca48",
                         "parameters": {
@@ -216,8 +219,9 @@
                                 "value": "[[parameters('PostgreSQLFlexPublicIpDenyEffect')]"
                             }
                         }
-                    },*/
-                    /* USGOV_PolicyDefinitionNotFound {
+                    },
+                    // US_Gov_Error_006
+                    {
                         "policyDefinitionReferenceId": "MySQLFlexDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c9299215-ae47-4f50-9c54-8a392f68a052",
                         "parameters": {
@@ -225,7 +229,7 @@
                                 "value": "[[parameters('MySQLFlexPublicIpDenyEffect')]"
                             }
                         }
-                    },*/
+                    },
                     {
                         "policyDefinitionReferenceId": "BatchDenyPublicIP",
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/74c5a0ae-5e48-4738-b093-65e23a060488",

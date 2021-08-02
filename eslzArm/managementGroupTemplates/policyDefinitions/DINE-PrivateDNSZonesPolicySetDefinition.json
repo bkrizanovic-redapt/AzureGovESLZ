@@ -23,14 +23,15 @@
                             "description": "Private DNS Zone Identifier"
                         }
                     },
-                    /* USGOV_InvalidPolicySetParameterUpdate "azureWebPrivateDnsZoneId": {
+                    // US_Gov_Error_004
+                    "azureWebPrivateDnsZoneId": {
                         "type": "string",
                         "metadata": {
                             "displayName": "azureWebPrivateDnsZoneId",
                             "strongType": "Microsoft.Network/privateDnsZones",
                             "description": "Private DNS Zone Identifier"
                         }
-                    },*/
+                    },
                     "azureBatchPrivateDnsZoneId": {
                         "type": "string",
                         "metadata": {
@@ -213,7 +214,8 @@
                             }
                         }
                     },
-                    /* USGOV_InvalidPolicySetParameterUpdate {
+                    // US_Gov_Error_004
+                    {
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0b026355-49cb-467b-8ac4-f777874e175a",
                         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Web",
                         "parameters": {
@@ -224,7 +226,7 @@
                                 "value": "[[parameters('effect')]"
                             }
                         }
-                    },*/
+                    },
                     {
                         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4ec38ebc-381f-45ee-81a4-acbc4be878f8",
                         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Batch",

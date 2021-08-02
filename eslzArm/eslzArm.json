@@ -2428,7 +2428,7 @@
                         "value": "[variables('platformRgNames').identityVnetRg]"
                     },
                     "vNetName": {
-                        /* USGOV_NetcfgInvalidVirtualNetworkSite "value": "[concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet)]"*/
+                        // US_Gov_Error_008 "value": "[concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet)]"
                         "value": "[take(concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet), 64)]"
                     },
                     "vNetLocation": {
@@ -2475,7 +2475,7 @@
                         "value": "[variables('platformRgNames').identityVnetRg]"
                     },
                     "vNetName": {
-                        /* USGOV_NetcfgInvalidVirtualNetworkSite "value": "[concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet)]"*/
+                        // US_Gov_Error_008 "value": "[concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet)]"
                         "value": "[take(concat(parameters('identitySubscriptionId'), variables('platformResourceNames').identityVnet), 64)]"
                     },
                     "vNetLocation": {
